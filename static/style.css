@@ -1,25 +1,27 @@
 body {
     background: rgb(238,174,202);
     background: radial-gradient(circle, rgba(238,174,202,1) 1%, rgba(148,187,233,1) 85%);
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.conatiner {
+    font-family: Verdana, sans-serif;
     padding: 0 auto;
     margin: 0 auto;
-}
-.nav {
-    background-color:  rgba(148,187,233,1);
-    height: 350px;
-    justify-content: center;
+    width: 1000px;
 }
 
-ul {
-    text-align: center;
-    list-style-type: none;
-    display: flex;
-    font-size: 20px;
+
+.nav {
+    background-color:  rgba(148,187,233,1);
+    height: 200px;
+    justify-content: center;
+    padding: 5px;
+    padding-top: 5px;
 }
+
+.font {
+    justify-content: center;
+    
+}
+
+
 .header {
     background-color: rgba(236, 170, 198, 0.543);
     display: flex;
@@ -45,6 +47,36 @@ ul {
 
 }
 
+#games {
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.carousel-inner {
+    margin: 20px; 
+    padding: 10px; 
+}
+
+.carousel-control-prev, .carousel-control-next {
+  display: none;
+}
+.carousel-inner {
+  cursor: pointer;
+}
+
+#back-to-top {
+display: none;
+position: fixed;
+bottom: 20px;
+right: 20px;
+z-index: 99;
+background-color: rgba(148,187,233,1);
+color: #fff;
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+}
+
 p {
     color: whitesmoke;
 }
@@ -59,55 +91,30 @@ a {
 }
 
 
-.slideshow-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    width: 300px; 
-    background-color: rgb(118, 171, 233); 
-    padding: 10px; 
-    height: 550px;
-    margin-bottom: -90px; 
+
+.image-container {
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.icons-container {
+    display:inline-block;
+    justify-content: center;
+    margin-top: 5px;
+    font-size: 36px;
 }
 
 
-.slideshow-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    width: 100%; 
-    overflow: hidden;
-}
 
-
-.slide img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-.text {
+#text {
     text-align: center;
+    font-size: 24px;
     color: #fff;
     padding: 8px 0;
+
 }
 
-
-.nav-buttons {
-    display: flex;
-    justify-content: center; 
-    margin-top: 10px; 
-}
-
-.prev, .next {
-    cursor: pointer;
-    padding: 10px 20px;
-    margin: 0 10px; 
-    color: #fff;
-    font-weight: bold;
-    font-size: 20px;
-    text-decoration: none;
-}
 
 
 h3 {
@@ -123,6 +130,7 @@ h3 {
     border-radius: 50%;
     position: relative;
     bottom: 0;
+  
 }
 
 
@@ -145,3 +153,27 @@ h3 {
     padding: 10px; 
 }
 
+@media (min-width: 900px ) {
+    body {
+        height: 100vh;
+    }
+
+    .font {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .icons {
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    .carousel-inner {
+        text-align: center;
+    }
+
+    #games, #projects {
+        margin-top: 10px;
+    }
+
+}
